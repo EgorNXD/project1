@@ -1,14 +1,14 @@
-starting_distance = 16637000000
-speed = 38241
-print("Enter time in days:")
-time = int(input())*24
-miles = starting_distance + time*speed
-kilometers = round(1.60934*miles)
-au = 92955781.16*miles
-print("Voyager-1 traveled:")
-print(miles, ' miles, ', kilometers, ' kilometers,  ', au, '  astronomical units.  ')
+STRT_MILES = 16_637_000_000
+SPD_MPH = 38241
+T_HOURS = int(input("Enter time in days:"))*24
 
-wave_speed = 299792458*2.23694
-wave_delay = miles/wave_speed
+miles = STRT_MILES + T_HOURS*SPD_MPH
+kilometers = round(1.60934*miles)
+aus = 92_955_781.16*miles
+print("Voyager-1 traveled:")
+print(miles, ' miles, ', kilometers, ' kilometers,  ', aus, '  astronomical units.  ')
+
+WVSPD_MPH = 299_792_458*2.23694
+wv_delay = miles/WVSPD_MPH
 print("Communication delay:")
-print(wave_delay, " hours.")
+print(wv_delay, " hours.")

@@ -1,5 +1,4 @@
-print('Enter gasoline volume in gallons:')
-gas_gallons = float(input())
+gas_gallons = float(input('Enter gasoline volume in gallons:'))
 gas_liters = gas_gallons*3.785
 oil_barrels = gas_gallons/19.5
 co2_pounds = gas_gallons*20
